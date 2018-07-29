@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import socket
-
+#Vulnerable App : Freefloat FTP Server
+#Version : 1.00
 
 
 # [*] Exact match at offset 246
